@@ -20,6 +20,7 @@ export const SideBarList = () => {
                 <SideBarListItem title='Address' icon={<LocalPostOffice />} onClickHandler={() => onClickHandler(0, '/address')} index={0} selectedIndex={selectedItem} />
                 <SideBarListItem title='WebSocket' icon={<Power />} onClickHandler={() => onClickHandler(1, '/WebSocket')} index={1} selectedIndex={selectedItem} />
                 <SideBarListItem title='LeaderLine' icon={<Brush />} onClickHandler={() => onClickHandler(2, '/leaderline')} index={2} selectedIndex={selectedItem} />
+                <SideBarListItem title='Gitlab ユーザ作成' icon={<Brush />} onClickHandler={() => onClickHandler(2, '/gitlab-create-user')} index={3} selectedIndex={selectedItem} />
             </List>
         </div>
     );

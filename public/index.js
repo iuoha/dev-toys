@@ -2469,11 +2469,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React137 = require_react();
+          var React139 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React137.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React139.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format2) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2505,7 +2505,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React137) {
+          if (!React139) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3721,7 +3721,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React137.Children.forEach(children, function(child) {
+            React139.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3732,7 +3732,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React137.Children.forEach(props.children, function(child) {
+                React139.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10925,7 +10925,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React137.Component().refs;
+          var emptyRefsObject = new React139.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -22507,7 +22507,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       if (true) {
         (function() {
           "use strict";
-          var React137 = require_react();
+          var React139 = require_react();
           var _assign = require_object_assign();
           var REACT_ELEMENT_TYPE = 60103;
           var REACT_PORTAL_TYPE = 60106;
@@ -22564,7 +22564,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             }
             return null;
           }
-          var ReactSharedInternals = React137.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React139.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error(format2) {
             {
               for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
@@ -23560,11 +23560,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   });
 
   // src/index.tsx
-  var import_react39 = __toModule(require_react());
+  var import_react41 = __toModule(require_react());
   var import_react_dom5 = __toModule(require_react_dom());
 
   // src/App.tsx
-  var import_react38 = __toModule(require_react());
+  var import_react40 = __toModule(require_react());
 
   // node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
   function _arrayLikeToArray(arr, len) {
@@ -44926,6 +44926,12 @@ const theme2 = createTheme({ palette: {
       onClickHandler: () => onClickHandler(2, "/leaderline"),
       index: 2,
       selectedIndex: selectedItem
+    }), /* @__PURE__ */ import_react33.default.createElement(SideBarListItem_default, {
+      title: "Gitlab \u30E6\u30FC\u30B6\u4F5C\u6210",
+      icon: /* @__PURE__ */ import_react33.default.createElement(Brush_default, null),
+      onClickHandler: () => onClickHandler(2, "/gitlab-create-user"),
+      index: 3,
+      selectedIndex: selectedItem
     })));
   };
 
@@ -45003,39 +45009,86 @@ const theme2 = createTheme({ palette: {
   // src/components/page/leaderline/index.ts
   var leaderline_default = LeaderLinePage;
 
+  // src/components/page/gitlab-create-user/GitlabCreateUser.page.tsx
+  var import_react39 = __toModule(require_react());
+
+  // src/components/page/gitlab-create-user/GitlabCreateUser.tsx
+  var import_react38 = __toModule(require_react());
+  var GitlabCreateUser = () => {
+    const onCsvButtonClickHandler = () => {
+    };
+    const onConfirmButtonClickHandler = () => {
+    };
+    return /* @__PURE__ */ import_react38.default.createElement("div", {
+      className: "WerSocket"
+    }, /* @__PURE__ */ import_react38.default.createElement(Container_default, null, /* @__PURE__ */ import_react38.default.createElement(Row_default, {
+      className: "text-center"
+    }, /* @__PURE__ */ import_react38.default.createElement(Col_default, null, /* @__PURE__ */ import_react38.default.createElement("div", null, "\u30E6\u30FC\u30B6\u60C5\u5831\u3092\u5217\u6319\u3057\u305FCSV\u30D5\u30A1\u30A4\u30EB\u3092\u9078\u629E"), /* @__PURE__ */ import_react38.default.createElement(Button_default, {
+      onClick: onCsvButtonClickHandler
+    }, "CSV\u8AAD\u307F\u8FBC\u307F"))), /* @__PURE__ */ import_react38.default.createElement(Row_default, {
+      className: "text-center"
+    }, /* @__PURE__ */ import_react38.default.createElement(Col_default, null, /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"), /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"), /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"))), /* @__PURE__ */ import_react38.default.createElement(Row_default, {
+      className: "text-center"
+    }, /* @__PURE__ */ import_react38.default.createElement(Col_default, null, /* @__PURE__ */ import_react38.default.createElement(TextareaAutosize_default, {
+      style: { width: 500 },
+      minRows: 5,
+      readOnly: true
+    }))), /* @__PURE__ */ import_react38.default.createElement(Row_default, {
+      className: "text-center"
+    }, /* @__PURE__ */ import_react38.default.createElement(Col_default, null, /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"), /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"), /* @__PURE__ */ import_react38.default.createElement("div", null, "\u25BC"))), /* @__PURE__ */ import_react38.default.createElement(Row_default, {
+      className: "text-center"
+    }, /* @__PURE__ */ import_react38.default.createElement(Col_default, null, /* @__PURE__ */ import_react38.default.createElement("div", null, "\uFF0A\u4EF6\u306E\u30E6\u30FC\u30B6\u3092\u8FFD\u52A0\u3057\u307E\u3059"), /* @__PURE__ */ import_react38.default.createElement(Button_default, {
+      onClick: onConfirmButtonClickHandler
+    }, "\u78BA\u5B9A")))));
+  };
+
+  // src/components/page/gitlab-create-user/GitlabCreateUser.page.tsx
+  var GitlabCreateUserPage = () => {
+    return /* @__PURE__ */ import_react39.default.createElement(import_react39.default.Fragment, null, /* @__PURE__ */ import_react39.default.createElement(PageHeader_default, {
+      title: "Gitlab \u30E6\u30FC\u30B6\u4F5C\u6210"
+    }), /* @__PURE__ */ import_react39.default.createElement(GitlabCreateUser, null));
+  };
+
+  // src/components/page/gitlab-create-user/index.ts
+  var gitlab_create_user_default = GitlabCreateUserPage;
+
   // src/App.tsx
   var RoutingContent = () => {
-    return /* @__PURE__ */ import_react38.default.createElement(Content, {
+    return /* @__PURE__ */ import_react40.default.createElement(Content, {
       className: "site-layout-background",
       style: { padding: 0, margin: 0 }
-    }, /* @__PURE__ */ import_react38.default.createElement(Container_default, {
+    }, /* @__PURE__ */ import_react40.default.createElement(Container_default, {
       fluid: true
-    }, /* @__PURE__ */ import_react38.default.createElement(Row_default, null, /* @__PURE__ */ import_react38.default.createElement(Col_default, {
+    }, /* @__PURE__ */ import_react40.default.createElement(Row_default, null, /* @__PURE__ */ import_react40.default.createElement(Col_default, {
       xs: 3
-    }, /* @__PURE__ */ import_react38.default.createElement(SideBarList_default, null)), /* @__PURE__ */ import_react38.default.createElement(Col_default, {
+    }, /* @__PURE__ */ import_react40.default.createElement(SideBarList_default, null)), /* @__PURE__ */ import_react40.default.createElement(Col_default, {
       xs: 9
-    }, /* @__PURE__ */ import_react38.default.createElement(Row_default, null, /* @__PURE__ */ import_react38.default.createElement(Switch, null, /* @__PURE__ */ import_react38.default.createElement(Route, {
+    }, /* @__PURE__ */ import_react40.default.createElement(Row_default, null, /* @__PURE__ */ import_react40.default.createElement(Switch, null, /* @__PURE__ */ import_react40.default.createElement(Route, {
       path: "/address",
       component: address_default,
       exact: true
-    }), /* @__PURE__ */ import_react38.default.createElement(Route, {
+    }), /* @__PURE__ */ import_react40.default.createElement(Route, {
       path: "/websocket",
       component: websocket_default,
       exact: true
-    }), /* @__PURE__ */ import_react38.default.createElement(Route, {
+    }), /* @__PURE__ */ import_react40.default.createElement(Route, {
       path: "/leaderline",
       component: leaderline_default,
       exact: true
-    }), /* @__PURE__ */ import_react38.default.createElement(Route, {
+    }), /* @__PURE__ */ import_react40.default.createElement(Route, {
+      path: "/gitlab-create-user",
+      component: gitlab_create_user_default,
+      exact: true
+    }), /* @__PURE__ */ import_react40.default.createElement(Route, {
       path: "*"
-    }, /* @__PURE__ */ import_react38.default.createElement(Redirect, {
+    }, /* @__PURE__ */ import_react40.default.createElement(Redirect, {
       to: "page1"
     }))))))));
   };
-  var App = () => /* @__PURE__ */ import_react38.default.createElement(layout_default2, null, /* @__PURE__ */ import_react38.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react38.default.createElement(RoutingContent, null)));
+  var App = () => /* @__PURE__ */ import_react40.default.createElement(layout_default2, null, /* @__PURE__ */ import_react40.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react40.default.createElement(RoutingContent, null)));
 
   // src/index.tsx
-  import_react_dom5.default.render(/* @__PURE__ */ import_react39.default.createElement(App, null), document.getElementById("root"));
+  import_react_dom5.default.render(/* @__PURE__ */ import_react41.default.createElement(App, null), document.getElementById("root"));
 })();
 /*
 object-assign

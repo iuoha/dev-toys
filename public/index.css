@@ -35247,4 +35247,9 @@ fieldset:disabled .btn {
 /* src/components/page/address/Address.css */
 
 /* src/components/page/leaderline/LeaderLine.css */
+
+/* src/components/page/gitlab-create-user/GitlabCreateUser.css */
+.row {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=index.css.map */
